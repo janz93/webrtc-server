@@ -31,10 +31,6 @@ var url = require('url');
 var fs = require('fs');
 var WebSocketServer = require('websocket').server;
 
-import adapter from 'webrtc-adapter';
-
-adapter.browserDetails.browser
-
 // Used for managing the text chat user list.
 
 var connectionArray = [];
