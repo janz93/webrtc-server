@@ -11,6 +11,9 @@
     "type": "git",
     "url": "https://github.com/mdn/samples-server.git"
   },
+  "scripts": {
+    "start": "node chatserver.js"
+  },
   "dependencies": {
     "websocket": "*",
     "webrtc-adapter": "*"
