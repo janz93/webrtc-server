@@ -37,6 +37,8 @@ var connectionArray = [];
 var nextID = Date.now();
 var appendToMakeUnique = 1;
 
+const PORT = process.env.PORT || 6503;
+
 // Output logging information to console
 
 function log(text) {
@@ -140,7 +142,7 @@ var httpServer = http.createServer(function (request, response) {});
 // Spin up the HTTP server on the port assigned to this sample.
 // This will be turned into a WebSocket port very shortly.
 
-httpServer.listen(6503, function () {
+httpServer.listen(PORT, function () {
     log("Server is listening on port 6503");
 });
 
